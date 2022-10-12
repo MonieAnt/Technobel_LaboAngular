@@ -1,1 +1,65 @@
-<p>navbar works!</p>
+
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <img src="../../../../assets/img/RIsDi29jZT.png" alt="Logo Angular" height="80px" >
+      <a class="navbar-brand m-2" href="#" id="navbarTitle">My Angular Labo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu Principal</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" routerLink=""> Home</a>
+            </li>
+
+            <!-- DropDown - Chapter 1 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-chevron-right"></i>
+                Menu 1 : Test
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" routerLink="">Menu Home</a></li>
+                <li><a class="dropdown-item" routerLink="404">404 Error Page</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+             <!-- DropDown - Chapter 2 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-chevron-right"></i>
+                Menu 2 : Test2
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">2.1 - Test</a></li>
+                <li><a class="dropdown-item" href="#">2.2 - Test</a></li>
+                <li><a class="dropdown-item" href="#">2.3 - Test</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+
+           <!-- Recherche  -->
+          <form class="d-flex mt-5" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+</nav>

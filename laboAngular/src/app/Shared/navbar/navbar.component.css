@@ -1,0 +1,12 @@
+
+.nav {
+    margin-bottom: 5em;
+}
+
+
+/* Media Queries */
+@media (max-width: 489px) {
+    .navbar-toggler {
+        margin: auto;
+    }
+}
