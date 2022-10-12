@@ -3,6 +3,36 @@
     margin-bottom: 5em;
 }
 
+.navbar-toggler {
+    max-width: 10%;
+}
+
+#logoBalise {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+#logoBalise:hover > #logo {
+        background-image: url(../../../assets/img/2.png);
+        cursor: pointer;
+}
+
+#logo {
+    background-image: url(../../../assets/img/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+    width: 200px;
+    transition: .8s ease-in-out;
+}
+
+#logo:hover {
+    background-image: url(../../../assets/img/2.png);
+    cursor: pointer;
+}
+
 
 /* Media Queries */
 @media (max-width: 489px) {

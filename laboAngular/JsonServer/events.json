@@ -1,0 +1,17 @@
+{
+    "Events" : [
+        {
+            "id" : 1,
+            "name" : "Event A",
+            "date" : "01/01/2023",
+            "location" : "Country Hall",
+            "city" : "Liège"
+        }, {
+            "id" : 2,
+            "name" : "Event B",
+            "date" : "02/02/2023",
+            "location" : "Namur Expo",
+            "city" : "Namur"
+        }
+    ]
+}
