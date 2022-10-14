@@ -1,17 +1,19 @@
 
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-dark bg-perso-dark">
     <div class="container-fluid">
-      <div>A définir</div>
+      <div>LogIn/LogOut</div>
       <div id="logoBalise">
-        <div id="logo"></div>
+        <a routerLink="">
+          <div id="logo"></div>
+        </a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
         <i class="fa-solid fa-bars-staggered"></i>
       </button>
 
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas offcanvas-end bg-perso-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu Principal</h5>
+          <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">Menu Principal</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
@@ -28,7 +30,7 @@
                 Menu 1 : Coopératives
               </a>
               <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" routerLink="">Inscription</a></li>
+                <li><a class="dropdown-item" routerLink="coop/coop-login">Inscription</a></li>
                 <li><a class="dropdown-item" routerLink="404">404 Error Page</a></li>
                 <li>
                   <hr class="dropdown-divider">
@@ -41,7 +43,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-chevron-right"></i>
-                Menu 2 : Test2
+                Menu 2 : Users
               </a>
               <ul class="dropdown-menu dropdown-menu-dark">
                 <li><a class="dropdown-item" href="#">2.1 - Test</a></li>
@@ -58,7 +60,7 @@
            <!-- Recherche  -->
           <form class="d-flex mt-5" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-success" type="submit">Search</button>
+            <button class="btn bg-success" type="submit">Search</button>
           </form>
 
         </div>

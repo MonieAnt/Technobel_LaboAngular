@@ -9,16 +9,26 @@ import { HomeComponent } from './Home/home.component';
 import { NavbarComponent } from './Shared/navbar/navbar.component';
 import { FooterComponent } from './Shared/footer/footer.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { CoopLoginComponent } from './coop/coop-login/coop-login.component';
 
 // Autres
 
 @NgModule({
   declarations: [
     AppComponent,
+    
+    // Structures
     HomeComponent,
+
+    // 404
+    ErrorPageComponent,
+
+    // Shared
     NavbarComponent,
     FooterComponent,
-    ErrorPageComponent
+
+    // Cooperatives
+    CoopLoginComponent
   ],
   imports: [
     BrowserModule,

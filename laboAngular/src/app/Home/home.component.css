@@ -1,18 +1,247 @@
 
-.background {
-    height: 100%;
+main, .background {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
 }
 
-.parallax {
-    /* The image used */
-    background-image: url(../../assets/img/background1.jpg);
-  
-    /* Full height */
-    height: 100%; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("../../assets/img/Gradient_Stop_Saying_Tomorrow_Quote_Wallpaper_Dekstop.png");
+  min-height: 100%;
+  height: 100vh;
+}
+
+.bgimg-2 {
+  background-image: url("../../assets/img/Gradient_Stop_Saying_Tomorrow_Quote_Wallpaper_Dekstop2.png");
+  min-height: 400px;
+  height: 80vh;
+}
+
+.bgimg-3 {
+  background-image: url("../../assets/img/Gradient_Stop_Saying_Tomorrow_Quote_Wallpaper_Dekstop2.png");
+  min-height: 400px;
+  height: 100vh;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: #2E2A38;
+  display: flex;
+  justify-content: center;
+}
+
+.caption-position-min {
+  top: 15%
+}
+
+.caption span.border {
+  background-color: #2E2A38;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #fff;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+/* Carousel Events */
+
+.calendar {
+  width: 40%;
+  height: 30%;
+  background-color: #2e2a387f;
+  border-radius: 20px;
+}
+
+.carousel-inner {
+  border-radius: 0px 0px 20px 20px;
+  opacity: 85%;
+}
+
+
+
+
+
+/* Card Perso */
+
+.card {
+  color: inherit;
+  cursor: pointer;
+  width: calc(40vh - 2rem);
+  /* width: 400px; */
+  min-width: calc(33% - 2rem);
+  height: 400px;
+  min-height: 400px;
+  perspective: 1000px;
+  margin: 1rem;
+  position: relative;
+  border: transparent;
+  background-color: transparent;
+}
+@media screen and (max-width: 800px) {
+  .card {
+    width: calc(30vh - 2rem);
+  }
+}
+@media screen and (max-width: 500px) {
+  .card {
+    width: 23vh;
+  }
+}
+
+.front,
+.back {
+  display: flex;
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: ease-in-out 600ms;
+  color: white;
+}
+
+.front {
+  background-size: cover;
+  padding: 2rem;
+  font-size: 1.618rem;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+  font-family: 'Poppins, sans-serif';
+  box-shadow: 10px 11px 26px 1px rgba(45,40,60,0.54);
+  -webkit-box-shadow: 10px 11px 26px 1px rgba(45,40,60,0.54);
+  -moz-box-shadow: 10px 11px 26px 1px rgba(45,40,60,0.54);
+}
+
+.front p {
+  margin-top: 13em;
+}
+
+.front:before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #1a9be6, #1a57e6);
+  opacity: 0.25;
+  z-index: -1;
+}
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+.card:nth-child(even):hover .front {
+  transform: rotateY(-180deg);
+}
+
+.back {
+  background: #2E2A38;
+  opacity: 85%;
+  transform: rotateY(-180deg);
+  padding: 0 2em;
+  box-shadow: 10px 11px 26px 1px rgba(45,40,60,0.54);
+  -webkit-box-shadow: 10px 11px 26px 1px rgba(45,40,60,0.54);
+  -moz-box-shadow: 10px 11px 26px 1px rgba(45,40,60,0.54);
+}
+.back .button {
+  background: linear-gradient(135deg, #1a9be6, #1a57e6);
+}
+.back .button:before {
+  box-shadow: 0 0 10px 10px rgba(26, 87, 230, 0.25);
+  background-color: rgba(26, 87, 230, 0.25);
+}
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+.card:nth-child(even) .back {
+  transform: rotateY(180deg);
+}
+.card:nth-child(even) .back .button {
+  background: linear-gradient(135deg, #e61a80, #e61a3c);
+}
+.card:nth-child(even) .back .button:before {
+  box-shadow: 0 0 10px 10px rgba(230, 26, 60, 0.25);
+  background-color: rgba(230, 26, 60, 0.25);
+}
+.card:nth-child(even):hover .back {
+  transform: rotateY(0deg);
+}
+
+.button {
+  transform: translateZ(40px);
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  font: inherit;
+  border: none;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 300ms ease;
+}
+.button:before {
+  transition: 300ms ease;
+  position: absolute;
+  display: block;
+  content: "";
+  transform: translateZ(-40px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  border-radius: 100px;
+  left: 10px;
+  top: 16px;
+}
+.button:hover {
+  transform: translateZ(55px);
+}
+.button:hover:before {
+  transform: translateZ(-55px);
+}
+.button:active {
+  transform: translateZ(20px);
+}
+.button:active:before {
+  transform: translateZ(-20px);
+  top: 12px;
 }

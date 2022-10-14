@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CoopLoginComponent } from './coop/coop-login/coop-login.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 
 import { HomeComponent } from "./Home/home.component";
@@ -9,12 +10,12 @@ const routes: Routes = [
   {path: "", component: HomeComponent},
 
   // 404 Error Page :
-  {path: "404", component: ErrorPageComponent}
+  {path: "404", component: ErrorPageComponent},
 
   // Path Imbriqué :
-  // {path: "demo", children : [
-  //   {path: "2.1_compo", component}
-  // ]}
+  {path: "coop", children : [
+    {path: "coop-login", component: CoopLoginComponent}
+  ]}
 ];
 
 @NgModule({

@@ -1,6 +1,13 @@
 
 /* Mise en Classe perso */
 
+/* Font Perso */
+@font-face {
+  font-family: 'Playlist Script';
+  src: url(./assets/Fonts/PlaylistScript.otf) format("otf");
+}
+
+
 /* LayOut */
 .container {
     display: block;
@@ -73,7 +80,25 @@
     width: 50%;
   }
   
+
+  /* Colors */
+
+  .bg-perso-dark {
+    background-color: #2E2A38;
+  }
   
+  .bg-perso-pink {
+    background-color: #ffc1c1;
+  }
+
+  .text-white {
+    color: #fff;
+  }
+
+  .text-perso-dark {
+    color: #2E2A38;
+  }
+
   /* Debug */
   
   .d1 {
