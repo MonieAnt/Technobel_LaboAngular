@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CoopLoginComponent } from './coop-login.component';
+import { CoopHomeComponent } from './coop-home.component';
 
-describe('CoopLoginComponent', () => {
-  let component: CoopLoginComponent;
-  let fixture: ComponentFixture<CoopLoginComponent>;
+describe('CoopHomeComponent', () => {
+  let component: CoopHomeComponent;
+  let fixture: ComponentFixture<CoopHomeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CoopLoginComponent ]
+      declarations: [ CoopHomeComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CoopLoginComponent);
+    fixture = TestBed.createComponent(CoopHomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -9,14 +9,15 @@ import { HomeComponent } from './Home/home.component';
 import { NavbarComponent } from './Shared/navbar/navbar.component';
 import { FooterComponent } from './Shared/footer/footer.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
-import { CoopLoginComponent } from './coop/coop-login/coop-login.component';
+import { CoopHomeComponent } from './coop/coop-home/coop-home.component';
+
 
 // Autres
 
 @NgModule({
   declarations: [
     AppComponent,
-    
+
     // Structures
     HomeComponent,
 
@@ -28,7 +29,8 @@ import { CoopLoginComponent } from './coop/coop-login/coop-login.component';
     FooterComponent,
 
     // Cooperatives
-    CoopLoginComponent
+    CoopHomeComponent,
+
   ],
   imports: [
     BrowserModule,

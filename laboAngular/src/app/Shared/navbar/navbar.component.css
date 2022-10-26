@@ -13,11 +13,6 @@
     justify-content: center;
 }
 
-#logoBalise:hover > #logo {
-        background-image: url(../../../assets/img/WhiteModernMountainRecreationalSportsLogo2.png);
-        cursor: pointer;
-}
-
 #logo {
     background-image: url(../../../assets/img/WhiteModernMountainRecreationalSportsLogo1.png);
     background-position: center;
@@ -26,6 +21,11 @@
     height: 100px;
     width: 400px;
     transition: .8s ease-in-out;
+}
+
+#logoBalise:hover > #logo {
+        background-image: url(../../../assets/img/WhiteModernMountainRecreationalSportsLogo2.png);
+        cursor: pointer;
 }
 
 #logo:hover {

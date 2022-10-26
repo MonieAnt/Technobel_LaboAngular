@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CoopLoginComponent } from './coop/coop-login/coop-login.component';
+import { CoopHomeComponent } from './coop/coop-home/coop-home.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 
 import { HomeComponent } from "./Home/home.component";
@@ -14,7 +14,7 @@ const routes: Routes = [
 
   // Path Imbriqué :
   {path: "coop", children : [
-    {path: "coop-login", component: CoopLoginComponent}
+    {path: "coop-home", component: CoopHomeComponent},
   ]}
 ];
 
